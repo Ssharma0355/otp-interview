@@ -63,6 +63,10 @@ function GetAllUsers() {
             {d.firstName} {d.lastName}
           </h1>
           <h3>{d.email}</h3>
+          <p>
+            Age : {d.age}, DOB: {d.birthDate}
+          </p>
+          {d.gender === "female"? "Auraat Jaat":"Mard ha bhai"}
           <button onClick={addDev} className="Btn-hire">
             Add to hire
           </button>
