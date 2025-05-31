@@ -1,13 +1,20 @@
-import { useEffect, useRef, useState } from "react";
+import { Suspense} from "react";
 import "./App.css";
-import Otp from "./components/Otp";
+import React from "react";
+import Navbar from "./components/Navbar";
+const GetAllUsers = React.lazy(() => import("./components/GetAllUsers"));
+
 
 function App() {
 
  
   return (
     <>
-      <Otp />
+      {/* <Otp /> */}
+      <Navbar />
+      <Suspense fallback={()=><h1>Data is comming please wait.....</h1>}>
+        <GetAllUsers />
+      </Suspense>
     </>
   );
 }

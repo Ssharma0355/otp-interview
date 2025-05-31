@@ -1,0 +1,37 @@
+
+.Profile-Container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+.Profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin: 1rem;
+    border-radius: 1.2rem;
+}
+.Profile-card:hover{
+    background-color: aliceblue;
+
+}
+.Profile-card img{
+    margin: .5rem;
+    border-radius: 1.2rem;
+    border: 1px solid black;
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+}
+.Btn-hire{
+    height: 2rem;
+    width: 12rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    background-color: blue;
+    color: wheat;
+    border-radius: .5rem;
+    cursor: pointer;
+}
