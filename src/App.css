@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+.otp-input{
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  margin: .5rem;
+}
